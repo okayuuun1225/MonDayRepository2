@@ -12,20 +12,24 @@ int main(void)
 
 	//character.Attack();
 
-	Player player("自分");
-	cout << player.GetName() << endl;
+	string playerName;
+	string enemyName;
+	string bossName;
+
+	Player player(playerName);
+	cout << "プレイヤー" << player.GetName() << endl;
 
 	player.Attack();
 
 
-	Enemy enemy("お前");
-	cout << enemy.GetName() << endl;
+	Enemy enemy(enemyName);
+	cout << "敵" << enemy.GetName() << endl;
 
 	enemy.Attack();
 
 
-	Boss boss("あいつ");
-	cout << boss.GetName() << endl;
+	Boss boss(bossName);
+	cout << "ボス" << boss.GetName() << endl;
 
 	boss.Attack();
 
