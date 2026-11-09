@@ -6,6 +6,10 @@ public:
 	~Enemy();
 
 	void Update();
-	void Draw();
+	void Draw() const;
+
+	int GetHp() const;
+private:
+	int hp;
 };
 
